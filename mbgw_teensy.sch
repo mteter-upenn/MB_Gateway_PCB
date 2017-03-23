@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -1550,7 +1550,7 @@ Max Vin: 36V</description>
 <text x="-3.175" y="4.445" size="1.524" layer="95">&gt;NAME</text>
 <text x="-3.81" y="-6.35" size="1.524" layer="96">&gt;VALUE</text>
 </symbol>
-<symbol name="RM25C512C">
+<symbol name="MB85RS256BPNF">
 <wire x1="-7.62" y1="5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
 <wire x1="7.62" y1="5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="7.62" y1="-5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
@@ -1989,9 +1989,9 @@ Max Vin: 36V</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="RM25C512C">
+<deviceset name="MB85RS256BPNF" prefix="MEM">
 <gates>
-<gate name="G$1" symbol="RM25C512C" x="0" y="0"/>
+<gate name="G$1" symbol="MB85RS256BPNF" x="0" y="0"/>
 </gates>
 <devices>
 <device name="SOIC" package="SO08">
@@ -3374,7 +3374,7 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <part name="R16" library="SparkFun-Resistors" deviceset="RESISTOR" device="0603" value="1K"/>
 <part name="R17" library="SparkFun-Resistors" deviceset="RESISTOR" device="0603" value="5.1K"/>
 <part name="C2" library="SparkFun-Capacitors" deviceset="CAP" device="0603-CAP" value="273"/>
-<part name="MEM1" library="UPenn" deviceset="RM25C512C" device="SOIC"/>
+<part name="MEM1" library="UPenn" deviceset="MB85RS256BPNF" device="SOIC"/>
 <part name="R18" library="SparkFun-Resistors" deviceset="RESISTOR" device="0603" value="180"/>
 <part name="C3" library="SparkFun-Capacitors" deviceset="CAP" device="0603-CAP" value="104"/>
 </parts>
