@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -3347,8 +3347,8 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <part name="R13" library="SparkFun-Resistors" deviceset="RESISTOR" device="0603" value="120"/>
 <part name="R14" library="SparkFun-Resistors" deviceset="RESISTOR" device="0603" value="270"/>
 <part name="C1" library="SparkFun-Capacitors" deviceset="CAP" device="0603-CAP" value="104"/>
-<part name="LED1" library="SparkFun-LED" deviceset="LED" device="0603"/>
-<part name="LED2" library="SparkFun-LED" deviceset="LED" device="0603"/>
+<part name="TX" library="SparkFun-LED" deviceset="LED" device="0603" value="YLW"/>
+<part name="RX" library="SparkFun-LED" deviceset="LED" device="0603" value="YLW"/>
 <part name="IC1" library="maxim" deviceset="MAX481CSA" device=""/>
 <part name="Q2" library="UPenn" deviceset="MOSFET-N" device="2N7002"/>
 <part name="Q1" library="UPenn" deviceset="MOSFET-N" device="2N7002"/>
@@ -3424,8 +3424,8 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <attribute name="VALUE" x="86.36" y="151.638" size="1.778" layer="96"/>
 </instance>
 <instance part="C1" gate="G$1" x="96.52" y="182.88" rot="R270"/>
-<instance part="LED1" gate="G$1" x="171.45" y="50.8"/>
-<instance part="LED2" gate="G$1" x="210.82" y="50.8"/>
+<instance part="TX" gate="G$1" x="171.45" y="50.8"/>
+<instance part="RX" gate="G$1" x="210.82" y="50.8"/>
 <instance part="IC1" gate="G$1" x="110.49" y="156.21" rot="MR0"/>
 <instance part="Q2" gate="G$1" x="160.02" y="50.8" smashed="yes">
 <attribute name="NAME" x="165.1" y="53.34" size="1.778" layer="95"/>
@@ -3628,13 +3628,13 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <segment>
 <pinref part="Q2" gate="G$1" pin="S"/>
 <wire x1="160.02" y1="45.72" x2="160.02" y2="43.18" width="0.1524" layer="91"/>
-<pinref part="LED2" gate="G$1" pin="C"/>
+<pinref part="RX" gate="G$1" pin="C"/>
 <wire x1="160.02" y1="43.18" x2="171.45" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="171.45" y1="43.18" x2="180.34" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="180.34" y1="43.18" x2="199.39" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="199.39" y1="43.18" x2="210.82" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="210.82" y1="43.18" x2="210.82" y2="45.72" width="0.1524" layer="91"/>
-<pinref part="LED1" gate="G$1" pin="C"/>
+<pinref part="TX" gate="G$1" pin="C"/>
 <wire x1="171.45" y1="45.72" x2="171.45" y2="43.18" width="0.1524" layer="91"/>
 <junction x="171.45" y="43.18"/>
 <pinref part="Q3" gate="G$1" pin="S"/>
@@ -4002,7 +4002,7 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 </net>
 <net name="N$28" class="0">
 <segment>
-<pinref part="LED2" gate="G$1" pin="A"/>
+<pinref part="RX" gate="G$1" pin="A"/>
 <pinref part="R8" gate="G$1" pin="2"/>
 <wire x1="199.39" y1="69.85" x2="199.39" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="199.39" y1="58.42" x2="210.82" y2="58.42" width="0.1524" layer="91"/>
@@ -4018,7 +4018,7 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <wire x1="160.02" y1="55.88" x2="160.02" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="R7" gate="G$1" pin="1"/>
 <wire x1="160.02" y1="58.42" x2="171.45" y2="58.42" width="0.1524" layer="91"/>
-<pinref part="LED1" gate="G$1" pin="A"/>
+<pinref part="TX" gate="G$1" pin="A"/>
 <wire x1="171.45" y1="58.42" x2="176.53" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="171.45" y1="53.34" x2="171.45" y2="58.42" width="0.1524" layer="91"/>
 <junction x="171.45" y="58.42"/>

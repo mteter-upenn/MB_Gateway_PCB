@@ -1013,8 +1013,8 @@ design rules under a new name.</description>
 <element name="R13" library="SparkFun-Resistors" package="0603-RES" value="120" x="33.782" y="26.416" rot="MR0"/>
 <element name="R14" library="SparkFun-Resistors" package="0603-RES" value="270" x="33.782" y="28.702" rot="MR0"/>
 <element name="C1" library="SparkFun-Capacitors" package="0603-CAP" value="104" x="34.798" y="21.082" rot="R270"/>
-<element name="LED1" library="SparkFun-LED" package="LED-0603" value="" x="34.036" y="10.414" rot="MR270"/>
-<element name="LED2" library="SparkFun-LED" package="LED-0603" value="" x="39.37" y="10.414" rot="MR270"/>
+<element name="TX" library="SparkFun-LED" package="LED-0603" value="YLW" x="34.036" y="10.414" rot="MR270"/>
+<element name="RX" library="SparkFun-LED" package="LED-0603" value="YLW" x="39.37" y="10.414" rot="MR270"/>
 <element name="IC1" library="maxim" package="SO08" value="MAX481CSA" x="36.576" y="25.908" rot="R90">
 <attribute name="MF" value="MAXIM" x="36.576" y="25.908" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="MAX481CSA" x="36.576" y="25.908" size="1.778" layer="27" rot="R90" display="off"/>
@@ -1066,8 +1066,8 @@ design rules under a new name.</description>
 <contactref element="BATT" pad="C"/>
 <contactref element="Q1" pad="2"/>
 <contactref element="PWR" pad="C"/>
-<contactref element="LED1" pad="C"/>
-<contactref element="LED2" pad="C"/>
+<contactref element="TX" pad="C"/>
+<contactref element="RX" pad="C"/>
 <contactref element="Q2" pad="2"/>
 <contactref element="Q3" pad="2"/>
 <contactref element="U$2" pad="NEG"/>
@@ -1478,7 +1478,7 @@ design rules under a new name.</description>
 <wire x1="34.544" y1="21.59" x2="37.084" y2="24.13" width="0.2032" layer="16"/>
 </signal>
 <signal name="N$28">
-<contactref element="LED2" pad="A"/>
+<contactref element="RX" pad="A"/>
 <contactref element="R8" pad="2"/>
 <contactref element="Q3" pad="3"/>
 <via x="40.386" y="12.446" extent="1-16" drill="0.508"/>
@@ -1491,7 +1491,7 @@ design rules under a new name.</description>
 <signal name="N$29">
 <contactref element="Q2" pad="3"/>
 <contactref element="R7" pad="1"/>
-<contactref element="LED1" pad="A"/>
+<contactref element="TX" pad="A"/>
 <via x="36.576" y="5.588" extent="1-16" drill="0.508"/>
 <wire x1="36.576" y1="5.588" x2="36.576" y2="8.552" width="0.2032" layer="1"/>
 <wire x1="32.766" y1="5.5" x2="32.854" y2="5.588" width="0.2032" layer="1"/>
